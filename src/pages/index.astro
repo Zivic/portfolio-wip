@@ -34,6 +34,7 @@ import Card from "../components/Card.astro";
         </linearGradient>
       </defs>
     </div>
+    <div class = "col">
     <h1>Coming <span class="text-gradient">Soon</span></h1>
     <p class="instructions">
        In the meantime, feel free
@@ -41,6 +42,7 @@ import Card from "../components/Card.astro";
         ><a href="https://www.georgez.dev">georgez.dev</a></code
       >
     </p>
+  </div>
     <!-- <ul role="list" class="link-card-grid">
 			<Card
 				href="https://docs.astro.build/"
@@ -125,5 +127,9 @@ import Card from "../components/Card.astro";
     grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
     gap: 2rem;
     padding: 0;
+  }
+  .col {
+    display:flex;
+    flex-direction: column;
   }
 </style>
